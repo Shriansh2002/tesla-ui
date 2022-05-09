@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 import styled from 'styled-components';
 
 const Section = ({ title, description, backgroundImg, leftBtnText, rightBtnText }) => {
-    return <Wrap bgImage={backgroundImg}>
+    return <Wrap bgImage={backgroundImg} id={title.split(" ").join("")}>
         <Fade bottom>
             <ItemText>
                 <h1>{title}</h1>

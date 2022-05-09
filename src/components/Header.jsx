@@ -22,7 +22,7 @@ const Header = () => {
             </a>
             <Menu>
                 {cars && cars.map((car, index) => (
-                    <a href="#" key={car + index}>{car}</a>
+                    <a href={`#${car.split(" ").join("")}`} key={car + index}>{car}</a>
                 ))}
             </Menu>
 
@@ -37,7 +37,7 @@ const Header = () => {
                 </CloseWrapper>
 
                 {cars && cars.map((car, index) => (
-                    <li key={car + index}><a href="#">{car}</a></li>
+                    <li key={car + index}><a href={`#${car.split(" ").join("")}`}>{car}</a></li>
                 ))}
                 <li><a href="#">Used Inventory</a></li>
                 <li><a href="#">Trade-in</a></li>
